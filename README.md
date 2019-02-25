@@ -16,11 +16,21 @@
 - [x] Easy presentation.
 - [x] Pure Swift 4.2
 
-## Select Date & Year
+## Working Demo
+
+<div align = "center">
+<img src="animated.gif" width="400" />
+</div>
+
+## Select Date 
 
 <div align = "center">
 <img src="IMG_0445.png" width="400" />
- <img src="IMG_0446.png" width="400" />
+</div>
+
+## Select year
+<div align = "center">
+<img src="IMG_0446.png" width="400" />
 </div>
 
 - Set and Confirm Protocol VSCalenderProtocol
