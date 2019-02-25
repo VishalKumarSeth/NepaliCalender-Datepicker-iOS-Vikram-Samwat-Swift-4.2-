@@ -40,6 +40,18 @@ class ViewController: UIViewController,VSCalenderProtocol
 - Set Button action and delegate method 
 
 ```Swift
+   override func viewDidLoad() {
+           super.viewDidLoad()
+
+           // call converter method to convert any given english date to Nepali/Hindi date
+           let Data = VSCalender.EngToNepDate(yy: 2019, mm: 02, dd: 25)
+
+           print(Data.date)
+           print(Data.month)
+           print(Data.year)
+           print(Data.hindiMonth)
+
+    }
    // MARK: ------Button Action to open Calender
     @IBAction func btnOpenCalender(_ sender: Any)
     {
