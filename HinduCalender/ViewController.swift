@@ -13,22 +13,21 @@ class ViewController: UIViewController,VSCalenderProtocol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // call converter method to convert any given english date to Nepali/Hindi date
+        let Data = VSCalender.EngToNepDate(yy: 2019, mm: 02, dd: 25)
+        
+        print(Data.date)
+        print(Data.month)
+        print(Data.year)
+        print(Data.hindiMonth)
 
-        // Do any additional setup after loading the view.
     }
     
     // MARK: ------Button Action to open Calender
     @IBAction func btnOpenCalender(_ sender: Any)
     {
         VSCalender.show(view: self) // Call this method to show calender into you view controller
-        
-        // call converter method to convert any given english date to Nepali/Hindi date
-        let Data = VSCalender.EngToNepDate(yy: 2019, mm: 02, dd: 22)
-        
-        print(Data.date)
-        print(Data.month)
-        print(Data.year)
-        print(Data.hindiMonth)
     }
     
     // MARK: ------Delegates method (Hindi to english and vice versa)
