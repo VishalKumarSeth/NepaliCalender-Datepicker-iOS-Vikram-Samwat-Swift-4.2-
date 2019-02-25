@@ -15,3 +15,13 @@
 - [x] very easily undetstable.
 - [x] Easy presentation.
 - [x] Pure Swift 4.2
+
+<div align = "center">
+<img src="Assets/gifs/IMG_0445.png" width="400" />
+</div>
+
+## Usage
+
+<div align = "center">
+<img src="Assets/gifs/IMG_0446.png" width="400" />
+</div>
