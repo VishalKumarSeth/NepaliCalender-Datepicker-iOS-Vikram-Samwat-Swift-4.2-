@@ -37,7 +37,7 @@
 ```swift
 class ViewController: UIViewController,VSCalenderProtocol
 ```
-- Set Button actiion and delegate method 
+- Set Button action and delegate method 
 
 ```Swift
    // MARK: ------Button Action to open Calender
