@@ -1,0 +1,148 @@
+//
+//  DataViewController.swift
+//  Nepali calendar
+//
+//  Created by Sujindra Maharjan on 5/8/18.
+//  Copyright © 2018 Sujindra Maharjan. All rights reserved.
+//
+
+import UIKit
+
+class DataViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var viewBg: UIView!
+    var selectedDate:String = ""
+    
+    var dataObject:PageData!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    struct Data{
+        var day:Int
+        var englishDay:Int
+        var today:Bool
+    }
+    var data:[Data] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //viewBg.layer.borderColor=UIColor.lightGray.cgColor
+        //viewBg.layer.borderWidth=0.5
+        collectionView.register(UINib.init(nibName: "DataCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "dataCell")
+        //viewHeight.constant = (UIScreen.main.bounds.width - 40)
+        let currentDate = Calendar.current.dateComponents([.year,.month,.day], from: Date.init())
+        let currentDateConverter = DateConverterHelper.init()
+        let dateConverter = DateConverterHelper.init()
+        
+        currentDateConverter.engToNep(yy: currentDate.year!, mm: currentDate.month!, dd: currentDate.day!)
+        dateConverter.engToNep(yy: currentDate.year!, mm: currentDate.month!, dd: currentDate.day!)
+        let current_year = currentDateConverter.getConvertedYear()
+        let current_month = currentDateConverter.getConvertedMonth()
+        let current_day = currentDateConverter.getConvertedDays()
+        
+        var day = 0
+        var extraDays = 0
+        let converter = DateConverterHelper.init()
+        for i in 0..<42{
+            
+            if(i>=dataObject.startDayOfMonth && i<dataObject.numberOfDaysInMonth+extraDays){
+                day+=1
+                
+                converter.nepToEng(yy: dataObject.year, mm: dataObject.month, dd: day)
+                
+                let englishDay = converter.getConvertedDays()
+                data.append(Data.init(day:day,englishDay: englishDay,today: (day == current_day)))
+                
+            }else if i<dataObject.startDayOfMonth{
+                data.append(Data.init(day: 0,englishDay: 0, today: false))
+                extraDays+=1
+            }
+        }
+        if extraDays == 7 {
+            data.removeSubrange(0...6)
+            //print("data count:\(data.count)")
+        }
+        //collectionView.numberOfItems(inSection: data.count)
+        collectionView.reloadData()
+        
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    //        return data.count
+    //    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! DataCollectionViewCell
+        
+        if data[indexPath.row].day>0{
+            
+            cell.dayLabel.text = NepaliTranslator.getNumber(english: String(format:"%d",data[indexPath.row].day))
+            
+        }else{
+            cell.dayLabel.text = ""
+        }
+        if data[indexPath.row].englishDay>0{
+            cell.englishDateLabel.text = String(format:"%d",data[indexPath.row].englishDay)
+        }else{
+            cell.englishDateLabel.text = ""
+        }
+        if data[indexPath.row].today && dataObject.current{
+            cell.viewBg.backgroundColor = UIColor(rgb:0xefefef)
+        }
+        
+        if (selectedDate==NepaliTranslator.getNumber(english: String(format:"%d",data[indexPath.row].day)))
+        {
+            cell.viewBg.backgroundColor = UIColor(rgb:0xefefef)
+        }
+        else
+        {
+            cell.viewBg.backgroundColor=UIColor.white
+        }
+        
+        cell.contentView.addBorders(edges: [.right,.bottom], color: UIColor(rgb: 0xefefef))
+        return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = collectionView.frame.size.width/7
+        return CGSize(width:size
+            , height: size)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        //let cell:DataCollectionViewCell=collectionView.cellForItem(at: indexPath)as! DataCollectionViewCell
+        if data[indexPath.row].day>0{
+            selectedDate="\(NepaliTranslator.getNumber(english: String(format:"%d",data[indexPath.row].day)))"
+            //print("Data=\(NepaliTranslator.getNumber(english: String(format:"%d",data[indexPath.row].day)))")
+            var dateDict:[String:Int] = [String:Int]()
+            dateDict.updateValue(data[indexPath.row].day, forKey: "date")
+            dateDict.updateValue(dataObject.month, forKey: "month")
+            dateDict.updateValue(dataObject.year, forKey: "year")
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "selectedDateNotification"), object: nil, userInfo: dateDict)
+            collectionView.reloadData()
+        }
+        
+    }
+}
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataViewController" customModule="HinduCalender" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="81v-QF-uzV" id="tdn-nw-fgG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBg" destination="cz3-X6-qTi" id="DQU-ze-Giv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-X6-qTi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="81v-QF-uzV">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DEb-Xg-Lo5">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="fn4-we-Szs"/>
+                                <outlet property="delegate" destination="-1" id="phH-KL-KCn"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="81v-QF-uzV" secondAttribute="bottom" id="DKg-Cy-nqf"/>
+                        <constraint firstAttribute="trailing" secondItem="81v-QF-uzV" secondAttribute="trailing" id="NwB-hJ-W33"/>
+                        <constraint firstItem="81v-QF-uzV" firstAttribute="leading" secondItem="cz3-X6-qTi" secondAttribute="leading" id="TrE-Ft-R9r"/>
+                        <constraint firstItem="81v-QF-uzV" firstAttribute="top" secondItem="cz3-X6-qTi" secondAttribute="top" id="yKN-WE-CIp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cz3-X6-qTi" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Lzc-Ig-05l"/>
+                <constraint firstItem="cz3-X6-qTi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nb0-V4-1Zh"/>
+                <constraint firstItem="cz3-X6-qTi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Uzo-7e-b5b"/>
+                <constraint firstItem="cz3-X6-qTi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uM2-U2-Ajd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-372" y="-91.754122938530742"/>
+        </view>
+    </objects>
+</document>

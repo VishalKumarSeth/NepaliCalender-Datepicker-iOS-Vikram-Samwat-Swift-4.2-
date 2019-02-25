@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4A0E92221D2C050085AB15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A0E91221D2C050085AB15 /* AppDelegate.swift */; };
+		0A4A0E97221D2C050085AB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A0E95221D2C050085AB15 /* Main.storyboard */; };
+		0A4A0E9A221D2C050085AB15 /* HinduCalender.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A0E98221D2C050085AB15 /* HinduCalender.xcdatamodeld */; };
+		0A4A0E9C221D2C0C0085AB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A0E9B221D2C0C0085AB15 /* Assets.xcassets */; };
+		0A4A0E9F221D2C0C0085AB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A0E9D221D2C0C0085AB15 /* LaunchScreen.storyboard */; };
+		0A4A0EAA221D2C0C0085AB15 /* HinduCalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A0EA9221D2C0C0085AB15 /* HinduCalenderTests.swift */; };
+		0A4A0EB5221D2C0C0085AB15 /* HinduCalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A0EB4221D2C0C0085AB15 /* HinduCalenderUITests.swift */; };
+		0A61D4C0221E854300417A16 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61D4BE221E854300417A16 /* ModelController.swift */; };
+		0A61D4CE221EAA3400417A16 /* DateConverterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61D4CC221EAA3400417A16 /* DateConverterHelper.swift */; };
+		0A61D4CF221EAA3400417A16 /* NepaliTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61D4CD221EAA3400417A16 /* NepaliTranslator.swift */; };
+		0A61D4D1221EAA4300417A16 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A61D4D0221EAA4300417A16 /* UIExtension.swift */; };
+		0AE9E20B22200C5800090AB3 /* VSCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9E20A22200C5800090AB3 /* VSCalender.swift */; };
+		0AE9E2162220211F00090AB3 /* VSCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9E2142220211F00090AB3 /* VSCalenderViewController.swift */; };
+		0AE9E2172220211F00090AB3 /* VSCalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE9E2152220211F00090AB3 /* VSCalenderViewController.xib */; };
+		0AE9E21A2220215A00090AB3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9E2182220215A00090AB3 /* DataViewController.swift */; };
+		0AE9E21B2220215A00090AB3 /* DataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE9E2192220215A00090AB3 /* DataViewController.xib */; };
+		C92575D4222083A1004652F1 /* YearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92575D2222083A1004652F1 /* YearCell.swift */; };
+		C92575D5222083A1004652F1 /* YearCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92575D3222083A1004652F1 /* YearCell.xib */; };
+		C92575D7222085C2004652F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92575D6222085C2004652F1 /* ViewController.swift */; };
+		C92575DA22208D89004652F1 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92575D822208D89004652F1 /* DataCollectionViewCell.swift */; };
+		C92575DB22208D89004652F1 /* DataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92575D922208D89004652F1 /* DataCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A4A0EA6221D2C0C0085AB15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4A0E86221D2C050085AB15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A4A0E8D221D2C050085AB15;
+			remoteInfo = HinduCalender;
+		};
+		0A4A0EB1221D2C0C0085AB15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4A0E86221D2C050085AB15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A4A0E8D221D2C050085AB15;
+			remoteInfo = HinduCalender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A4A0E8E221D2C050085AB15 /* HinduCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HinduCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4A0E91221D2C050085AB15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A4A0E96221D2C050085AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A4A0E99221D2C050085AB15 /* HinduCalender.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HinduCalender.xcdatamodel; sourceTree = "<group>"; };
+		0A4A0E9B221D2C0C0085AB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A4A0E9E221D2C0C0085AB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A4A0EA0221D2C0C0085AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4A0EA5221D2C0C0085AB15 /* HinduCalenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HinduCalenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4A0EA9221D2C0C0085AB15 /* HinduCalenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinduCalenderTests.swift; sourceTree = "<group>"; };
+		0A4A0EAB221D2C0C0085AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4A0EB0221D2C0C0085AB15 /* HinduCalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HinduCalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4A0EB4221D2C0C0085AB15 /* HinduCalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinduCalenderUITests.swift; sourceTree = "<group>"; };
+		0A4A0EB6221D2C0C0085AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A61D4BE221E854300417A16 /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		0A61D4CC221EAA3400417A16 /* DateConverterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConverterHelper.swift; sourceTree = "<group>"; };
+		0A61D4CD221EAA3400417A16 /* NepaliTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NepaliTranslator.swift; sourceTree = "<group>"; };
+		0A61D4D0221EAA4300417A16 /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		0AE9E20A22200C5800090AB3 /* VSCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCalender.swift; sourceTree = "<group>"; };
+		0AE9E2142220211F00090AB3 /* VSCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCalenderViewController.swift; sourceTree = "<group>"; };
+		0AE9E2152220211F00090AB3 /* VSCalenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VSCalenderViewController.xib; sourceTree = "<group>"; };
+		0AE9E2182220215A00090AB3 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		0AE9E2192220215A00090AB3 /* DataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataViewController.xib; sourceTree = "<group>"; };
+		C92575D2222083A1004652F1 /* YearCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCell.swift; sourceTree = "<group>"; };
+		C92575D3222083A1004652F1 /* YearCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YearCell.xib; sourceTree = "<group>"; };
+		C92575D6222085C2004652F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C92575D822208D89004652F1 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		C92575D922208D89004652F1 /* DataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A4A0E8B221D2C050085AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EA2221D2C0C0085AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EAD221D2C0C0085AB15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4A0E85221D2C050085AB15 = {
+			isa = PBXGroup;
+			children = (
+				0A4A0E90221D2C050085AB15 /* HinduCalender */,
+				0A4A0EA8221D2C0C0085AB15 /* HinduCalenderTests */,
+				0A4A0EB3221D2C0C0085AB15 /* HinduCalenderUITests */,
+				0A4A0E8F221D2C050085AB15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A4A0E8F221D2C050085AB15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A0E8E221D2C050085AB15 /* HinduCalender.app */,
+				0A4A0EA5221D2C0C0085AB15 /* HinduCalenderTests.xctest */,
+				0A4A0EB0221D2C0C0085AB15 /* HinduCalenderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A4A0E90221D2C050085AB15 /* HinduCalender */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9E20922200C3100090AB3 /* HelperClass */,
+				0A61D4C6221E857F00417A16 /* Utility */,
+				0A61D4CB221EAA1E00417A16 /* Extention */,
+				0AE9E206221FDBA000090AB3 /* Cell */,
+				0A4A0E91221D2C050085AB15 /* AppDelegate.swift */,
+				0AE9E2142220211F00090AB3 /* VSCalenderViewController.swift */,
+				0AE9E2152220211F00090AB3 /* VSCalenderViewController.xib */,
+				0AE9E2182220215A00090AB3 /* DataViewController.swift */,
+				0AE9E2192220215A00090AB3 /* DataViewController.xib */,
+				0A61D4BE221E854300417A16 /* ModelController.swift */,
+				0A4A0E95221D2C050085AB15 /* Main.storyboard */,
+				C92575D6222085C2004652F1 /* ViewController.swift */,
+				0A4A0E9B221D2C0C0085AB15 /* Assets.xcassets */,
+				0A4A0E9D221D2C0C0085AB15 /* LaunchScreen.storyboard */,
+				0A4A0EA0221D2C0C0085AB15 /* Info.plist */,
+				0A4A0E98221D2C050085AB15 /* HinduCalender.xcdatamodeld */,
+			);
+			path = HinduCalender;
+			sourceTree = "<group>";
+		};
+		0A4A0EA8221D2C0C0085AB15 /* HinduCalenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A0EA9221D2C0C0085AB15 /* HinduCalenderTests.swift */,
+				0A4A0EAB221D2C0C0085AB15 /* Info.plist */,
+			);
+			path = HinduCalenderTests;
+			sourceTree = "<group>";
+		};
+		0A4A0EB3221D2C0C0085AB15 /* HinduCalenderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A0EB4221D2C0C0085AB15 /* HinduCalenderUITests.swift */,
+				0A4A0EB6221D2C0C0085AB15 /* Info.plist */,
+			);
+			path = HinduCalenderUITests;
+			sourceTree = "<group>";
+		};
+		0A61D4C6221E857F00417A16 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0A61D4CC221EAA3400417A16 /* DateConverterHelper.swift */,
+				0A61D4CD221EAA3400417A16 /* NepaliTranslator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0A61D4CB221EAA1E00417A16 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				0A61D4D0221EAA4300417A16 /* UIExtension.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		0AE9E206221FDBA000090AB3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C92575D2222083A1004652F1 /* YearCell.swift */,
+				C92575D3222083A1004652F1 /* YearCell.xib */,
+				C92575D822208D89004652F1 /* DataCollectionViewCell.swift */,
+				C92575D922208D89004652F1 /* DataCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0AE9E20922200C3100090AB3 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9E20A22200C5800090AB3 /* VSCalender.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A4A0E8D221D2C050085AB15 /* HinduCalender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4A0EB9221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalender" */;
+			buildPhases = (
+				0A4A0E8A221D2C050085AB15 /* Sources */,
+				0A4A0E8B221D2C050085AB15 /* Frameworks */,
+				0A4A0E8C221D2C050085AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HinduCalender;
+			productName = HinduCalender;
+			productReference = 0A4A0E8E221D2C050085AB15 /* HinduCalender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A4A0EA4221D2C0C0085AB15 /* HinduCalenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4A0EBC221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalenderTests" */;
+			buildPhases = (
+				0A4A0EA1221D2C0C0085AB15 /* Sources */,
+				0A4A0EA2221D2C0C0085AB15 /* Frameworks */,
+				0A4A0EA3221D2C0C0085AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A4A0EA7221D2C0C0085AB15 /* PBXTargetDependency */,
+			);
+			name = HinduCalenderTests;
+			productName = HinduCalenderTests;
+			productReference = 0A4A0EA5221D2C0C0085AB15 /* HinduCalenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A4A0EAF221D2C0C0085AB15 /* HinduCalenderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A4A0EBF221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalenderUITests" */;
+			buildPhases = (
+				0A4A0EAC221D2C0C0085AB15 /* Sources */,
+				0A4A0EAD221D2C0C0085AB15 /* Frameworks */,
+				0A4A0EAE221D2C0C0085AB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A4A0EB2221D2C0C0085AB15 /* PBXTargetDependency */,
+			);
+			name = HinduCalenderUITests;
+			productName = HinduCalenderUITests;
+			productReference = 0A4A0EB0221D2C0C0085AB15 /* HinduCalenderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A4A0E86221D2C050085AB15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Book Keeper";
+				TargetAttributes = {
+					0A4A0E8D221D2C050085AB15 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0A4A0EA4221D2C0C0085AB15 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0A4A0E8D221D2C050085AB15;
+					};
+					0A4A0EAF221D2C0C0085AB15 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0A4A0E8D221D2C050085AB15;
+					};
+				};
+			};
+			buildConfigurationList = 0A4A0E89221D2C050085AB15 /* Build configuration list for PBXProject "HinduCalender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A4A0E85221D2C050085AB15;
+			productRefGroup = 0A4A0E8F221D2C050085AB15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A4A0E8D221D2C050085AB15 /* HinduCalender */,
+				0A4A0EA4221D2C0C0085AB15 /* HinduCalenderTests */,
+				0A4A0EAF221D2C0C0085AB15 /* HinduCalenderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A4A0E8C221D2C050085AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4A0E9F221D2C0C0085AB15 /* LaunchScreen.storyboard in Resources */,
+				0AE9E2172220211F00090AB3 /* VSCalenderViewController.xib in Resources */,
+				0A4A0E9C221D2C0C0085AB15 /* Assets.xcassets in Resources */,
+				C92575DB22208D89004652F1 /* DataCollectionViewCell.xib in Resources */,
+				0A4A0E97221D2C050085AB15 /* Main.storyboard in Resources */,
+				C92575D5222083A1004652F1 /* YearCell.xib in Resources */,
+				0AE9E21B2220215A00090AB3 /* DataViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EA3221D2C0C0085AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EAE221D2C0C0085AB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A4A0E8A221D2C050085AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE9E20B22200C5800090AB3 /* VSCalender.swift in Sources */,
+				0A61D4CE221EAA3400417A16 /* DateConverterHelper.swift in Sources */,
+				0A4A0E9A221D2C050085AB15 /* HinduCalender.xcdatamodeld in Sources */,
+				0A61D4C0221E854300417A16 /* ModelController.swift in Sources */,
+				C92575DA22208D89004652F1 /* DataCollectionViewCell.swift in Sources */,
+				C92575D7222085C2004652F1 /* ViewController.swift in Sources */,
+				0A61D4CF221EAA3400417A16 /* NepaliTranslator.swift in Sources */,
+				0AE9E2162220211F00090AB3 /* VSCalenderViewController.swift in Sources */,
+				0A4A0E92221D2C050085AB15 /* AppDelegate.swift in Sources */,
+				C92575D4222083A1004652F1 /* YearCell.swift in Sources */,
+				0AE9E21A2220215A00090AB3 /* DataViewController.swift in Sources */,
+				0A61D4D1221EAA4300417A16 /* UIExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EA1221D2C0C0085AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4A0EAA221D2C0C0085AB15 /* HinduCalenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A4A0EAC221D2C0C0085AB15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4A0EB5221D2C0C0085AB15 /* HinduCalenderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A4A0EA7221D2C0C0085AB15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A4A0E8D221D2C050085AB15 /* HinduCalender */;
+			targetProxy = 0A4A0EA6221D2C0C0085AB15 /* PBXContainerItemProxy */;
+		};
+		0A4A0EB2221D2C0C0085AB15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A4A0E8D221D2C050085AB15 /* HinduCalender */;
+			targetProxy = 0A4A0EB1221D2C0C0085AB15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A4A0E95221D2C050085AB15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4A0E96221D2C050085AB15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A4A0E9D221D2C0C0085AB15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A4A0E9E221D2C0C0085AB15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A4A0EB7221D2C0C0085AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A4A0EB8221D2C0C0085AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A4A0EBA221D2C0C0085AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JBCW6YRBT2;
+				INFOPLIST_FILE = HinduCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.HinduCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A4A0EBB221D2C0C0085AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JBCW6YRBT2;
+				INFOPLIST_FILE = HinduCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.HinduCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A4A0EBD221D2C0C0085AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZQ7KJN6C5;
+				INFOPLIST_FILE = HinduCalenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siridemo.HinduCalenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HinduCalender.app/HinduCalender";
+			};
+			name = Debug;
+		};
+		0A4A0EBE221D2C0C0085AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZQ7KJN6C5;
+				INFOPLIST_FILE = HinduCalenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siridemo.HinduCalenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HinduCalender.app/HinduCalender";
+			};
+			name = Release;
+		};
+		0A4A0EC0221D2C0C0085AB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZQ7KJN6C5;
+				INFOPLIST_FILE = HinduCalenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siridemo.HinduCalenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HinduCalender;
+			};
+			name = Debug;
+		};
+		0A4A0EC1221D2C0C0085AB15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZQ7KJN6C5;
+				INFOPLIST_FILE = HinduCalenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siridemo.HinduCalenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HinduCalender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A4A0E89221D2C050085AB15 /* Build configuration list for PBXProject "HinduCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4A0EB7221D2C0C0085AB15 /* Debug */,
+				0A4A0EB8221D2C0C0085AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4A0EB9221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4A0EBA221D2C0C0085AB15 /* Debug */,
+				0A4A0EBB221D2C0C0085AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4A0EBC221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4A0EBD221D2C0C0085AB15 /* Debug */,
+				0A4A0EBE221D2C0C0085AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A4A0EBF221D2C0C0085AB15 /* Build configuration list for PBXNativeTarget "HinduCalenderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A4A0EC0221D2C0C0085AB15 /* Debug */,
+				0A4A0EC1221D2C0C0085AB15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A4A0E98221D2C050085AB15 /* HinduCalender.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A4A0E99221D2C050085AB15 /* HinduCalender.xcdatamodel */,
+			);
+			currentVersion = 0A4A0E99221D2C050085AB15 /* HinduCalender.xcdatamodel */;
+			path = HinduCalender.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0A4A0E86221D2C050085AB15 /* Project object */;
+}
