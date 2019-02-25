@@ -10,21 +10,6 @@ import UIKit
 
 class ViewController: UIViewController,VSCalenderProtocol
 {
-    func selectedDate(date: Int, month: Int, year: Int, hindiMonthName: String)
-    {
-        print(date)
-        print(month)
-        print(year)
-        print(hindiMonthName)
-    }
-    
-    func NepToEngDate(yy: Int, mm: Int, dd: Int) {
-        print(yy)
-        print(mm)
-        print(dd)
-    }
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,22 +19,33 @@ class ViewController: UIViewController,VSCalenderProtocol
     
     @IBAction func btnOpenCalender(_ sender: Any)
     {
-        VSCalender.show(view: self)
+        VSCalender.show(view: self) // Call this method to show calender into you view controller
+        
+        // call converter method to convert any given english date to Nepali/Hindi date
         let Data = VSCalender.EngToNepDate(yy: 2019, mm: 02, dd: 22)
+        
         print(Data.date)
         print(Data.month)
         print(Data.year)
         print(Data.hindiMonth)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: ------Delegates method (Hindi to english and vice versa)
+    func selectedDate(date: Int, month: Int, year: Int, hindiMonthName: String)
+    {
+        print(date)
+        print(month)
+        print(year)
+        print(hindiMonthName) // Got here selected Nepali/Hindi date with Hindi month name
     }
-    */
+    
+    func NepToEngDate(yy: Int, mm: Int, dd: Int) {
+        print(yy)
+        print(mm)
+        print(dd) // Got here selected Nepali/Hindi date to english date
+    }
+    
+    
+    
 
 }
